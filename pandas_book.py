@@ -12,6 +12,6 @@ def binner(values, bins):
         print(f'Bins: {binned_data}')
         return binned_data
     else:
-        print('Error')
+        print('Error, values/bins must be populated')
 
 

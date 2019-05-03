@@ -11,7 +11,11 @@ def binner(values, bins):
         binned_data = pd.cut(values, bins)
         print(f'Bins: {binned_data}')
         return binned_data
+    elif values and not bins:
+        print('Error, bin parameter is empty/must be populated')
+    elif not values and bins:
+        print('Error, values parameter is empty/must be populated')
     else:
-        print('Error, values/bins must be populated')
+        print('Error, both bins and values parameters are empty/must be populated')
 
 
